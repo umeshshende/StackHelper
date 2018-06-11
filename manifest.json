@@ -1,0 +1,20 @@
+{
+  "name": "StackHelper",
+  "description": "Hey StackHelper ! find the answer :).",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "browser_action": {
+   "default_icon": "logo.png",
+   "default_popup": "window.html"
+  },
+
+   "background": {"scripts":["background.js"]},
+  "permissions": [
+   "activeTab","tabs","webRequest",
+    "*://stackoverflow.com/questions/*",
+     "*://www.stackoverflow.com/questions/*",
+    "webRequestBlocking","storage"
+   ],
+  "icons": { "16": "logo.png", "128": "logo.png" }
+}
